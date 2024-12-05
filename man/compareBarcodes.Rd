@@ -29,7 +29,7 @@ to the \code{outs} folder.}
 
 \item{format}{The format of the output. If missing and \code{con} is a
 file name, the format is derived from the file extension. This argument is
-unnecessary when \code{con} is a derivative of \linkS4class{BiocFile}.}
+unnecessary when \code{con} is a derivative of \link[BiocIO:BiocFile-class]{BiocFile}.}
 
 \item{processing}{\code{character(2)} A vector of length 2 that corresponds to the
 processing type. The processing types are typically "raw" and "filtered".
