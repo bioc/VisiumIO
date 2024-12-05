@@ -21,8 +21,8 @@ TENxSpatialList(
 \S4method{import}{TENxSpatialList,ANY,ANY}(con, format, text, ...)
 }
 \arguments{
-\item{resources}{A \link{TENxFileList} object or a file path to the tarball
-containing the matrix / assay data resources.}
+\item{resources}{A \link[TENxIO:TENxFileList-class]{TENxFileList} object or a
+file path to the tarball containing the matrix / assay data resources.}
 
 \item{sample_id}{\code{character(1)} A single string specifying the sample ID.}
 

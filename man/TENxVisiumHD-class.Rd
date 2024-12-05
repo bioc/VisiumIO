@@ -26,11 +26,11 @@ TENxVisiumHD(
 \S4method{import}{TENxVisiumHD,ANY,ANY}(con, format, text, ...)
 }
 \arguments{
-\item{resources}{A \link{TENxFileList} object or a file path to the tarball
-containing the matrix / assay data resources.}
+\item{resources}{A \link[TENxIO:TENxFileList-class]{TENxFileList} object or a
+file path to the tarball containing the matrix / assay data resources.}
 
-\item{spatialResource}{A \link{TENxSpatialList} object or a file path to the
-tarball containing the spatial data.}
+\item{spatialResource}{A \link[=TENxSpatialList-class]{TENxSpatialList}
+object or a file path to the tarball containing the spatial data.}
 
 \item{spacerangerOut}{\code{character(1)} A single string specifying the path to
 the sample directory of \verb{spaceranger count}. The directory must contain the

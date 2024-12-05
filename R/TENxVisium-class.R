@@ -123,11 +123,11 @@ setClassUnion("TENxFileList_OR_TENxH5", members = c("TENxFileList", "TENxH5"))
 
 #' @rdname TENxVisium-class
 #'
-#' @param resources A [TENxFileList] object or a file path to the tarball
-#'   containing the matrix / assay data resources.
+#' @param resources A [TENxFileList][TENxIO::TENxFileList-class] object or a
+#'   file path to the tarball containing the matrix / assay data resources.
 #'
-#' @param spatialResource A [TENxSpatialList] object or a file path to the
-#'   tarball containing the spatial data.
+#' @param spatialResource A [TENxSpatialList][VisiumIO::TENxSpatialList-class]
+#'   object or a file path to the tarball containing the spatial data.
 #'
 #' @param spacerangerOut `character(1)` A single string specifying the path to
 #'   the sample directory of `spaceranger count`. The directory must contain the
