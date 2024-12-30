@@ -28,6 +28,7 @@
 #'   compressed (mainly with a `.gz` file extension).
 #'
 #' @importClassesFrom TENxIO TENxFile
+#' @import TENxIO
 #' @importFrom methods new is
 #'
 #' @exportClass TENxSpatialCSV
@@ -110,7 +111,7 @@ TENxSpatialCSV <- function(resource, colnames = .TISSUE_POS_COLS) {
 #' @return import-method: A `DataFrame` object containing the data from the CSV
 #'   file
 #'
-#' @importFrom S4Vectors DataFrame
+#' @importFrom S4Vectors DataFrame metadata metadata<-
 #' @exportMethod import
 setMethod("import", "TENxSpatialCSV", function(con, format, text, ...) {
     args <- list(file = path(con), header = !con@isList, row.names = 1L)
