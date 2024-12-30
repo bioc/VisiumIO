@@ -74,12 +74,14 @@ to a connection.}
 providing the string data to import.}
 }
 \value{
-A \link{SpatialExperiment} object
+A \link[SpatialExperiment:SpatialExperiment]{SpatialExperiment}
+object
 }
 \description{
-This class is a composed class of \link{TENxFileList} which can
-contain a list of \link{TENxFile} objects and a \link{TENxSpatialList} object. It is
-meant to handle a single Visium sample from 10X Genomics.
+This class is a composed class of
+\link[TENxIO:TENxFileList-class]{TENxFileList} which can contain a list of
+\link[TENxIO:TENxFile-class]{TENxFile} objects and a \link{TENxSpatialList} object.
+It is meant to handle a single Visium sample from 10X Genomics.
 }
 \details{
 Typically, the user will not create an object of this class directly
@@ -97,8 +99,8 @@ arguments are paths to files.
 \section{Slots}{
 
 \describe{
-\item{\code{resources}}{A \link{TENxFileList} or \link{TENxH5} object containing the Visium
-data.}
+\item{\code{resources}}{A \link[TENxIO:TENxFileList-class]{TENxFileList} or
+\link[TENxIO:TENxH5-class]{TENxH5} object containing the Visium data.}
 
 \item{\code{spatialList}}{A \link{TENxSpatialList} object containing the spatial}
 

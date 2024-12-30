@@ -2,9 +2,10 @@
 #'
 #' @title A class to represent and import spatial Visium data
 #'
-#' @description This class is a composed class of [TENxFileList], which can
-#'   contain a list of [TENxFile] objects, and a [TENxSpatialList] object. It is
-#'   meant to handle spatial Visium data from 10X Genomics.
+#' @description This class is a composed class of
+#'   [TENxFileList][TENxIO::TENxFileList-class], which can contain a list of
+#'   [TENxFile][TENxIO::TENxFile-class] objects, and a [TENxSpatialList] object.
+#'   It is meant to handle spatial Visium data from 10X Genomics.
 #'
 #' @details Typically, the user will not create an object of this class directly
 #'   but rather use the [TENxVisium()] constructor function to create an object

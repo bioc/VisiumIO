@@ -79,7 +79,8 @@ to a connection.}
 providing the string data to import.}
 }
 \value{
-A \link{SpatialExperiment} object
+A \link[SpatialExperiment:SpatialExperiment]{SpatialExperiment}
+object
 }
 \description{
 This class contains a \code{SimpleList} of \link{TENxVisiumHD} objects

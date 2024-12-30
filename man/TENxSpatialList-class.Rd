@@ -60,9 +60,10 @@ providing the string data to import.}
 A \code{SpatialExperiment} object
 }
 \description{
-This class is a composed class of \link{TENxFileList}, which can
-contain a list of \link{TENxFile} objects, and a \link{TENxSpatialList} object. It is
-meant to handle spatial Visium data from 10X Genomics.
+This class is a composed class of
+\link[TENxIO:TENxFileList-class]{TENxFileList}, which can contain a list of
+\link[TENxIO:TENxFile-class]{TENxFile} objects, and a \link{TENxSpatialList} object.
+It is meant to handle spatial Visium data from 10X Genomics.
 }
 \details{
 Typically, the user will not create an object of this class directly

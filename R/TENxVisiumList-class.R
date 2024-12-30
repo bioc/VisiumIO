@@ -12,7 +12,8 @@
 #'
 #' @inheritParams TENxVisium
 #'
-#' @return A [SpatialExperiment] object
+#' @return A [SpatialExperiment][SpatialExperiment::SpatialExperiment-class]
+#'   object
 #'
 #' @seealso <https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview>
 #'

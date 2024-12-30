@@ -4,9 +4,10 @@ setClassUnion("TENxFileList_OR_TENxH5", members = c("TENxFileList", "TENxH5"))
 #'
 #' @title A class to represent and import a single Visium Sample
 #'
-#' @description This class is a composed class of [TENxFileList] which can
-#'   contain a list of [TENxFile] objects and a [TENxSpatialList] object. It is
-#'   meant to handle a single Visium sample from 10X Genomics.
+#' @description This class is a composed class of
+#'   [TENxFileList][TENxIO::TENxFileList-class] which can contain a list of
+#'   [TENxFile][TENxIO::TENxFile-class] objects and a [TENxSpatialList] object.
+#'   It is meant to handle a single Visium sample from 10X Genomics.
 #'
 #' @details Typically, the user will not create an object of this class directly
 #'   but rather use [TENxVisiumList] constructor function for multiple samples.
@@ -15,8 +16,8 @@ setClassUnion("TENxFileList_OR_TENxH5", members = c("TENxFileList", "TENxH5"))
 #'   `spacerangerOut` argument or both the `resources` and `spatialResource`
 #'   arguments are paths to files.
 #'
-#' @slot resources A [TENxFileList] or [TENxH5] object containing the Visium
-#'   data.
+#' @slot resources A [TENxFileList][TENxIO::TENxFileList-class] or
+#'   [TENxH5][TENxIO::TENxH5-class] object containing the Visium data.
 #'
 #' @slot spatialList A [TENxSpatialList] object containing the spatial
 #'
@@ -25,7 +26,8 @@ setClassUnion("TENxFileList_OR_TENxH5", members = c("TENxFileList", "TENxH5"))
 #'
 #' @slot sampleId `character(1)` A scalar specifying the sample identifier.
 #'
-#' @return A [SpatialExperiment] object
+#' @return A [SpatialExperiment][SpatialExperiment::SpatialExperiment-class]
+#'   object
 #'
 #' @seealso <https://support.10xgenomics.com/spatial-gene-expression/software/pipelines/latest/output/overview>
 #'

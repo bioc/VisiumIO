@@ -16,7 +16,8 @@
 #'
 #' @inheritParams TENxVisiumList-class
 #'
-#' @return A [SpatialExperiment] object
+#' @return A [SpatialExperiment][SpatialExperiment::SpatialExperiment-class]
+#'   object
 #'
 #' @exportClass TENxVisiumHD
 .TENxVisiumHD <- setClass(Class = "TENxVisiumHD", contains = "TENxVisium")
