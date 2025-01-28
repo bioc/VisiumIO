@@ -74,9 +74,11 @@
         squaref <- .getSpatialPath(path, bin_size) |> dirname()
         path <-  .find_file_or_dir(squaref, processing, format)
         fdirname <- paste0(processing, "_feature_bc_matrix")
+        fdirpath <- file.path(squaref, fdirname)
+        spatialpath <- file.path(squaref, "spatial")
         if (
-            !all(dir.exists(file.path(squaref, fdirname))) ||
-            !all(dir.exists(file.path(squaref, "spatial")))
+            (identical(format, "mtx") && !all(dir.exists(fdirpath))) ||
+                !all(dir.exists(spatialpath))
         )
             stop(
                 "The 'spatial' or '", fdirname, "' directory was not found.",
