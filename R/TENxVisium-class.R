@@ -156,7 +156,7 @@ setClassUnion("TENxFileList_OR_TENxH5", members = c("TENxFileList", "TENxH5"))
 #'  names of the columns in the spatial data containing the spatial coordinates.
 #'
 #' @param ... In the constructor, additional arguments passed to
-#'   [TENxFileList()]; otherwise, not used.
+#'   [TENxFileList][TENxIO::TENxFileList-class]; otherwise, not used.
 #'
 #' @importFrom BiocBaseUtils isScalarCharacter
 #'
